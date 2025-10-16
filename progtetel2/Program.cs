@@ -13,7 +13,7 @@ namespace progtetel2
             Console.WriteLine("Adjon meg egy négyjegyű kódot: ");
             int kod = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Adjon meg egy szöveget: ");
-            string szoveg = Console.ReadLine();
+            string szoveg = Console.ReadLine().ToLower();
 
             Console.WriteLine($"A(z) {szoveg} szöveg titkosítva:{titkosito(kod,szoveg)}");
 
